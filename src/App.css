@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Cutive+Mono&family=Kaushan+Script&family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+:root {
+  --primary-color: rgb(250, 250, 250);
+  --on-background: rgb(66, 66, 66);
+  --on-ig: #C13584;
+  --on-linked-in:#2867B2 ;
+  --on-github: #6e5494;
+  --background: #18191A;
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-color: var(--background);
+  background-image: url("butterfly.png");
+  background-image: url("butterfly.png"), radial-gradient(circle,var(--on-background) 0%,var(--background) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.8;
+  color: var(--primary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+section {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 100px;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+small {
+  font-size: 32px;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: normal;
 }
+
+.title-group {
+  text-align: center;
+  margin-bottom: 1cm;
+}
+
+.resume {
+  font-size: 25px;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: normal;
+  display: inline;
+  padding:0.35em 1.2em;
+  border: 0.1em solid var(--primary-color);
+  margin:10px 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  color: var(--primary-color);
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.resume:hover{
+  color: var(--on-background);
+  font-weight: 400;
+  background-color: var(--primary-color);
+  }
+
+.fab {
+  text-decoration: none;
+  font-size: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.fa-github:hover {
+  color: var(--on-github);
+}
+
+.fa-linkedin-in:hover {
+  color: var(--on-linked-in);
+}
+
+.fa-instagram:hover {
+  color: var(--on-ig);
+}
+
+
+nav {
+  z-index: 10;
+  position: fixed;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding: 25px;
+  width: 100vw;
+  background: transparent;
+}
+
+.first-text {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media all and (max-width:30em){
+   .resume{
+    display: block;
+    margin: 0.4em auto;
+  }
+  }
