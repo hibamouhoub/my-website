@@ -1,0 +1,107 @@
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .sliderimg{
+    width: 300px;
+    height: 617px;
+    object-fit: cover
+  }
+
+
+  #home {
+    background-image: url("../images/butterfly.png");
+  }
+
+  #art {
+    background-image: url("../images/art.png");
+  }
+ 
+  #music {
+    background-image: url("../images/music.png");
+  }
+  
+  
+  h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+    margin-bottom: 0;
+  }
+
+  .artH1 {
+    font-size: 55px;
+  }
+  
+  small {
+    font-size: 32px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: normal;
+  }
+  
+  .title-group {
+    text-align: center;
+    margin-bottom: 1cm;
+    justify-content: center;
+  }
+  
+  .resume {
+    font-size: 25px;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: normal;
+    display: inline;
+    padding:0.35em 1.2em;
+    border: 0.1em solid var(--primary-color);
+    margin:10px 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color: var(--primary-color);
+    background-color: transparent;
+    transition: all 0.2s;
+  }
+  
+  .resume:hover{
+    color: var(--on-background);
+    font-weight: 400;
+    background-color: var(--primary-color);
+    }
+  
+  .fab {
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+  
+  .fa-github:hover {
+    color: var(--on-github);
+  }
+  
+  .fa-linkedin-in:hover {
+    color: var(--on-linked-in);
+  }
+  
+  .fa-instagram:hover {
+    color: var(--on-ig);
+  }
+
+  .first-text {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: 'Kaushan Script', cursive;
+  }
+  
+  @media all and (max-width:30em){
+     .resume{
+      display: block;
+      margin: 0.4em auto;
+    }
+    }

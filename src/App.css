@@ -13,83 +13,13 @@
 body {
   margin: 0;
   background-color: var(--background);
-  background-image: url("butterfly.png");
-  background-image: url("butterfly.png"), radial-gradient(circle,var(--on-background) 0%,var(--background) 100%);
+  background-image: radial-gradient(circle,var(--on-background) 0%,var(--background) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   opacity: 0.8;
   color: var(--primary-color);
 }
-
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-h1 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 100px;
-  margin-bottom: 0;
-}
-
-small {
-  font-size: 32px;
-  font-family: 'Nanum Gothic Coding', monospace;
-  font-weight: normal;
-}
-
-.title-group {
-  text-align: center;
-  margin-bottom: 1cm;
-}
-
-.resume {
-  font-size: 25px;
-  font-family: 'Cutive Mono', monospace;
-  font-weight: normal;
-  display: inline;
-  padding:0.35em 1.2em;
-  border: 0.1em solid var(--primary-color);
-  margin:10px 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration:none;
-  color: var(--primary-color);
-  background-color: transparent;
-  transition: all 0.2s;
-}
-
-.resume:hover{
-  color: var(--on-background);
-  font-weight: 400;
-  background-color: var(--primary-color);
-  }
-
-.fab {
-  text-decoration: none;
-  font-size: 40px;
-  margin-right: 20px;
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
-.fa-github:hover {
-  color: var(--on-github);
-}
-
-.fa-linkedin-in:hover {
-  color: var(--on-linked-in);
-}
-
-.fa-instagram:hover {
-  color: var(--on-ig);
-}
-
 
 nav {
   z-index: 10;
@@ -101,15 +31,5 @@ nav {
   background: transparent;
 }
 
-.first-text {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-family: 'Kaushan Script', cursive;
-}
 
-@media all and (max-width:30em){
-   .resume{
-    display: block;
-    margin: 0.4em auto;
-  }
-  }
+
