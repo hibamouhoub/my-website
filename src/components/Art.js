@@ -1,22 +1,30 @@
 import React from 'react'
 import './Home.css'
-import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-import img1 from '../images/1.jpg'
-import img2 from '../images/2.jpg'
-import img3 from '../images/3.jpg'
-import img4 from '../images/4.jpg'
+import './Art.css'
+import {Picture} from './Picture'
+import images from '../images/images'
 
 export const Art = ({ imageB }) => {
+
+    const pictures = images.map(image =>{
+        console.log(image)
+        return <Picture imageURL= {image} date='01-04-2021'/>
+    })
+    
     return (
-        <div id={imageB} className="section">
-            <div className="title-group">
-                <h1 className="artH1">Sorrowful experiences unleash<br /> the artist in each one of us</h1>
-                <h1 className="artH1"></h1>
+        <div id={imageB}>
+            <div className="section">
+                <div className="title-group">
+                    <h1 className="artH1">
+                        Memories
+                    </h1>
+                </div>
+                <div class="card-grid">
+                    {pictures}
+                </div>
             </div>
+            
         </div>
-        
+
     )
 }

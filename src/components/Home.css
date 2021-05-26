@@ -22,6 +22,9 @@
 
   #art {
     background-image: url("../images/art.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
  
   #music {
@@ -51,29 +54,9 @@
     justify-content: center;
   }
   
-  .resume {
-    font-size: 25px;
-    font-family: 'Cutive Mono', monospace;
-    font-weight: normal;
-    display: inline;
-    padding:0.35em 1.2em;
-    border: 0.1em solid var(--primary-color);
-    margin:10px 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    color: var(--primary-color);
-    background-color: transparent;
-    transition: all 0.2s;
-  }
-  
-  .resume:hover{
-    color: var(--on-background);
-    font-weight: 400;
-    background-color: var(--primary-color);
-    }
   
   .fab {
+    text-align: center;
     text-decoration: none;
     font-size: 40px;
     margin-right: 20px;
@@ -81,23 +64,17 @@
     color: var(--primary-color);
   }
   
-  .fa-github:hover {
-    color: var(--on-github);
-  }
   
-  .fa-linkedin-in:hover {
-    color: var(--on-linked-in);
-  }
-  
-  .fa-instagram:hover {
-    color: var(--on-ig);
-  }
 
   .first-text {
     text-decoration: none;
     color: var(--primary-color);
     font-family: 'Kaushan Script', cursive;
   }
+
+  
+
+
   
   @media all and (max-width:30em){
      .resume{
