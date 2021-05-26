@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { ContactCard } from './ContactCard'
+import Pdf from '../../images/cv.pdf';
 
 export const Home = ({ imageB }) => {
     return (
@@ -27,7 +28,7 @@ export const Home = ({ imageB }) => {
                         faceId="cv"
                         aId="gocv"
                         fab="fas fa-file-invoice fa-2x"
-                        href="#"
+                        href={Pdf}
                     />
 
                     <ContactCard

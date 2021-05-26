@@ -8,6 +8,7 @@
     --spacing-xl: 32px;
     --spacing-xxl: 64px;
     --width-container: 1200px;
+    --width-container-small: 800px;
   }
 
 .hero-section{
@@ -100,4 +101,14 @@
     .card-grid{
       grid-template-columns: repeat(4, 1fr); 
     }
+  }
+
+  @media screen and (max-width:1000px) {
+    .card-grid{
+      max-width: var(--width-container-small);
+      width: 100%;
+    }
+    
+  
+    
   }

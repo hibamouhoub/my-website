@@ -69,4 +69,21 @@
     font-family: 'Kaushan Script', cursive;
   }
 
+
+
+  @media screen and (max-width:1000px) {
+    
+    .hello {
+        font-size: 60px;
+    }
+
+    small {
+      font-size: 20px;
+  }
+
+  .artH1 {
+    font-size: 30px;
+  }
+  }
+
   

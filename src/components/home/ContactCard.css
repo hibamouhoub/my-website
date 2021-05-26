@@ -71,8 +71,6 @@
     font-size: 1.5em;
 }
 
-
-
 .container .card .face.face2{
     position: relative;
     background: #333;
@@ -124,4 +122,33 @@
 }
 .container .card .face.face2 .content #gogithub:hover{
   color: var(--on-github);
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+  .container{
+    margin-top: -50px;
+    width: 300px;
+}
+  .container .card .face{
+    width: 50px;
+    height: 60px;
+  }
+
+  .container .card .face.face1{
+    transform: translateY(30px);
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1em;
+}
+
+.container .card .face.face2{
+  padding: 15px;
+  transform: translateY(-30px);
+}
+
+  
 }

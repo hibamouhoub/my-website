@@ -15,7 +15,7 @@ export const Memories = ({ imageB }) => {
         <div id={imageB} className="section">
                 <div className="title-group">
                     <h1 className="artH1">
-                        .. because every picture tells a story
+                        .. because every picture tells a different story
                     </h1>
                 </div>
                 <div className="card-grid">
