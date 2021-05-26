@@ -1,6 +1,6 @@
 
 
-export const Picture = ({ imageURL, date }) => {
+export const Picture = ({ imageURL }) => {
     return (
         <div className="card" >
             <div className="card__background" style={{ backgroundImage: `url(${imageURL})` }}></div>

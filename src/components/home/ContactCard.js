@@ -11,7 +11,7 @@ export const ContactCard = ({ faceId, aId , fab , href}) => {
             </div>
             <div className="face face2">
                 <div className="content">
-                    <a id={aId} style={{display: "table-cell"}} target="_blank" href={href}>GO</a>
+                    <a id={aId} style={{display: "table-cell"}} target="_blank" rel="noopener noreferrer" href={href}>GO</a>
                 </div>
             </div>
         </div>

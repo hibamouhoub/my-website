@@ -22,9 +22,6 @@
     background-position: center;
   }
  
-  #music {
-    background-image: url("../../images/music.png");
-  }
   
   
   .hello {
@@ -72,6 +69,14 @@
 
 
   @media screen and (max-width:1000px) {
+
+    #home {
+      background-size: 350px 196px;
+    }
+
+    #art {
+      background-size: 350px 272px;
+    }
     
     .hello {
         font-size: 60px;
@@ -82,7 +87,7 @@
   }
 
   .artH1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   }
 

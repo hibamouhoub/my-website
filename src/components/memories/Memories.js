@@ -8,7 +8,7 @@ export const Memories = ({ imageB }) => {
 
     const pictures = images.map(image =>{
         console.log(image)
-        return <Picture imageURL= {image} date='01-04-2021'/>
+        return <Picture key={image} imageURL= {image}/>
     })
     
     return (
