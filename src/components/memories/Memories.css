@@ -25,19 +25,10 @@
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
     width: 100%;
+    margin-bottom: 50px;
   }
   
-  @media(min-width: 540px){
-    .card-grid{
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
   
-  @media(min-width: 960px){
-    .card-grid{
-      grid-template-columns: repeat(4, 1fr); 
-    }
-  }
   
   .card{
     list-style: none;
@@ -97,4 +88,16 @@
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     line-height: 1.4;
     word-spacing: 100vw;
+  }
+
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
   }

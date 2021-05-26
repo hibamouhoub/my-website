@@ -1,24 +1,45 @@
 import React from 'react'
-import './App.css';
-import {Home} from './components/Home'
-import {Art} from './components/Art'
+import { Home } from './components/home/Home'
+import { Nav } from './components/nav/Nav'
+import { Memories } from './components/memories/Memories'
+import './App.css'
 
 
-class App extends React.Component{
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      home: true,
+      memories: false
+    }
+    this.handleNew = this.handleNew.bind(this)
+  }
 
-  render(){
+  handleNew(event) {
+    this.setState(() => {
+      return {
+        home: (event.target.id === "homeID") ? true : false,
+        memories: (event.target.id === "memoriesID") ? true : false
+      }
+    })
+  }
+
+  render() {
+
+    const navClass = (this.state.home) ? "animation start-home" : "animation start-memories" 
+
+
     return (
+
       <div className="App">
-        <nav id="nav">
-          <a className="first-text" href="#home">She/Her</a>
-        </nav>
+        <Nav start={navClass} handleNew={this.handleNew} />
 
-       <Home imageB="home"/>
+        {(this.state.home) ? <Home imageB="home" /> : null}
+        {(this.state.memories) ? <Memories imageB="art" /> : null}
 
-  
       </div>
     );
-  
+
   }
 }
 

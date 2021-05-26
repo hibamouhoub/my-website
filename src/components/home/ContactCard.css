@@ -1,6 +1,6 @@
 
 .container{
-    margin-top: 20px;
+    margin-top: -100px;
     width: 620px;
     position: relative;
     display: flex;
@@ -35,19 +35,19 @@
 }
 
 .container .card:hover #ig{
-  background: #E1306C;
+  background:var(--on-ig);
 }
 .container .card:hover #twitter{
-  background: #00acee;
+  background:var(--on-twitter);
 }
 .container .card:hover #cv{
-  background: #333;
+  background: var(--on-nav);
 }
 .container .card:hover #linkedin{
-  background: #0e76a8;
+  background: var(--on-linked-in);
 }
 .container .card:hover #github{
-  background: #6e5494;
+  background: var(--on-github);
 }
 
 .container .card .face.face1 .content{
@@ -64,7 +64,7 @@
 }
 
 .container .card .face.face1 .content h3{
-    margin: 10px 0 0;
+    margin: 0 0 0;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -100,7 +100,7 @@
     font-size: xx-large;
     display:  inline-block;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 800;
     color: var(--primary-color);
     padding: 5px;
     border: 1px solid #333;
@@ -111,17 +111,17 @@
 }
 
 .container .card .face.face2 .content #goig:hover{
-    color: #E1306C;
+    color:var(--on-ig);
 }
 .container .card .face.face2 .content #gotwitter:hover{
-  color: #00acee;
+  color: var(--on-twitter);
 }
 .container .card .face.face2 .content #gocv:hover{
-  color: #fff;
+  color: var(--on-nav);
 }
 .container .card .face.face2 .content #golinkedin:hover{
-  color: #0e76a8;
+  color: var(--on-linked-in);
 }
 .container .card .face.face2 .content #gogithub:hover{
-  color: #6e5494;
+  color: var(--on-github);
 }

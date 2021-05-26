@@ -1,10 +1,10 @@
 import React from 'react'
-import './Home.css'
-import './Art.css'
+import '../home/Home.css'
+import './Memories.css'
 import {Picture} from './Picture'
-import images from '../images/images'
+import images from '../../images/images'
 
-export const Art = ({ imageB }) => {
+export const Memories = ({ imageB }) => {
 
     const pictures = images.map(image =>{
         console.log(image)
@@ -12,17 +12,15 @@ export const Art = ({ imageB }) => {
     })
     
     return (
-        <div id={imageB}>
-            <div className="section">
+        <div id={imageB} className="section">
                 <div className="title-group">
                     <h1 className="artH1">
-                        Memories
+                        .. because every picture tells a story
                     </h1>
                 </div>
-                <div class="card-grid">
+                <div className="card-grid">
                     {pictures}
                 </div>
-            </div>
             
         </div>
 

@@ -6,6 +6,8 @@
   --on-ig: #C13584;
   --on-linked-in:#2867B2 ;
   --on-github: #6e5494;
+  --on-nav: #205666;
+  --on-twitter:#00acee;
   --background: #18191A;
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
@@ -21,15 +23,7 @@ body {
   color: var(--primary-color);
 }
 
-nav {
-  z-index: 10;
-  position: fixed;
-  font-size: 24px;
-  letter-spacing: 3px;
-  padding: 25px;
-  width: 100vw;
-  background: transparent;
-}
+
 
 
 

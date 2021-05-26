@@ -9,37 +9,35 @@
     background-position: center;
   }
 
-  .sliderimg{
-    width: 300px;
-    height: 617px;
-    object-fit: cover
-  }
 
 
   #home {
-    background-image: url("../images/butterfly.png");
+    background-image: url("../../images/butterfly.png");
   }
 
   #art {
-    background-image: url("../images/art.png");
+    background-image: url("../../images/art.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
   }
  
   #music {
-    background-image: url("../images/music.png");
+    background-image: url("../../images/music.png");
   }
   
   
-  h1 {
+  .hello {
     font-family: 'Kaushan Script', cursive;
     font-size: 100px;
     margin-bottom: 0;
   }
 
   .artH1 {
+    margin-top: 100px;
+    font-family: 'Kaushan Script', cursive;
     font-size: 55px;
+    margin-bottom: 0;
   }
   
   small {
@@ -55,11 +53,10 @@
   }
   
   
-  .fab {
+  .fab .far {
     text-align: center;
     text-decoration: none;
     font-size: 40px;
-    margin-right: 20px;
     cursor: pointer;
     color: var(--primary-color);
   }
@@ -73,12 +70,3 @@
   }
 
   
-
-
-  
-  @media all and (max-width:30em){
-     .resume{
-      display: block;
-      margin: 0.4em auto;
-    }
-    }
