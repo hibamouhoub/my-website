@@ -8,7 +8,7 @@ export const Home = ({ imageB }) => {
         <div id={imageB} className="section">
             <div className="title-group">
                 <h1 className="hello">Hello World!</h1>
-                <small>This is Hiba. Former potato.<br /> Currently, I'm a toast.</small>
+                <small>This is Hiba Mouhoub.<br />~Insert Coffee and let your mind wander~</small>
                 <div className="container">
                     <ContactCard
                         faceId="ig"
