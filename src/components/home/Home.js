@@ -14,14 +14,14 @@ export const Home = ({ imageB }) => {
                         faceId="ig"
                         aId="goig"
                         fab="fab fa-instagram fa-2x"
-                        href="https://www.instagram.com/powerinz/"
+                        href="https://www.instagram.com/potatoastie"
                     />
 
                     <ContactCard
                         faceId="twitter"
                         aId="gotwitter"
                         fab="fab fa-twitter fa-2x"
-                        href="https://twitter.com/_powerinz"
+                        href="https://twitter.com/potatoastie"
                     />
 
                     <ContactCard
