@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Cutive+Mono&family=Kaushan+Script&family=Nanum+Gothic+Coding:wght@700&display=swap');
+:root {
+    --primary-color: rgb(250, 250, 250);
+    --on-background: rgb(66, 66, 66);
+    --on-ig: #C13584;
+    --on-linked-in: #2867B2;
+    --on-github: #6e5494;
+    --on-nav: #6f4685;
+    --on-twitter: #00acee;
+    --background: #18191A;
+    --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    background-image: radial-gradient(circle, var(--on-background) 0%, var(--background) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.8;
+    color: var(--primary-color);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.hello {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.artH1 {
+    margin-top: 100px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 55px;
+    margin-bottom: 0;
+}
+
+small {
+    font-size: 32px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: normal;
+}
+
+.title-group {
+    text-align: center;
+    margin-bottom: 1cm;
+    justify-content: center;
+}
+
+.fab .far {
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.first-text {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: 'Kaushan Script', cursive;
+}
+
+@media screen and (max-width:1000px) {
+    #home {
+        background-size: 350px 196px;
+    }
+    #art {
+        background-size: 350px 272px;
+    }
+    .hello {
+        font-size: 60px;
+    }
+    small {
+        font-size: 20px;
+    }
+    .artH1 {
+        font-size: 25px;
+    }
+}
+
+nav {
+    margin-top: 27px;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: #18191A;
+    border-radius: 15px;
+    font-size: 0;
+    z-index: 2;
+}
+
+nav .nava {
+    line-height: 50px;
+    height: 100%;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 15px;
+}
+
+.nava:nth-child(1) {
+    width: 100px;
+}
+
+.nava:nth-child(2) {
+    width: 100px;
+}
+
+nav .start-home, .nava:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: var(--on-nav);
+}
+
+nav .start-memories, .nava:nth-child(2):hover~.animation {
+    width: 100px;
+    left: 100px;
+    background-color: var(--on-nav);
+}
+
+.cards {
+    margin-top: -100px;
+    width: 620px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .cardu {
+    position: relative;
+    cursor: pointer;
+}
+
+.cards .cardu .face {
+    border-radius: 15px;
+    width: 100px;
+    height: 80px;
+    transition: 0.5s;
+}
+
+.cards .cardu .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(40px);
+}
+
+.cards .cardu:hover .face.face1 {
+    transform: translateY(0);
+}
+
+.cards .cardu:hover #ig {
+    background: var(--on-ig);
+}
+
+.cards .cardu:hover #twitter {
+    background: var(--on-twitter);
+}
+
+.cards .cardu:hover #cv {
+    background: var(--on-nav);
+}
+
+.cards .cardu:hover #linkedin {
+    background: var(--on-linked-in);
+}
+
+.cards .cardu:hover #github {
+    background: var(--on-github);
+}
+
+.cards .cardu .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.cards .cardu:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.cards .cardu .face.face1 .content img {
+    max-width: 100px;
+}
+
+.cards .cardu .face.face1 .content h3 {
+    margin: 0 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cards .cardu .face.face2 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-40px);
+}
+
+.cards .cardu:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.cards .cardu .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.cards .cardu .face.face2 .content a {
+    margin: 0 0 0;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: xx-large;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.cards .cardu .face.face2 .content a:hover {
+    background: #333;
+}
+
+.cards .cardu .face.face2 .content #goig:hover {
+    color: var(--on-ig);
+}
+
+.cards .cardu .face.face2 .content #gotwitter:hover {
+    color: var(--on-twitter);
+}
+
+.cards .cardu .face.face2 .content #gocv:hover {
+    color: var(--on-nav);
+}
+
+.cards .cardu .face.face2 .content #golinkedin:hover {
+    color: var(--on-linked-in);
+}
+
+.cards .cardu .face.face2 .content #gogithub:hover {
+    color: var(--on-github);
+}
+

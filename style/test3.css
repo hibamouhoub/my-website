@@ -1,0 +1,162 @@
+.slider-sketch, .slider-shots{
+    margin : 30px 0 20px 20px;
+    border-radius: 10px;
+    width: 330px;
+    height: 640px;
+    background-size: 100% 100%;
+    box-shadow: rgb(7, 6, 6) 0px 0px 20px;
+    
+}
+
+.auction, .suicide, .search-engine{
+    width: 480px;
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+
+.auction{
+    background-image: url("./images/projects/eauction.jpg");
+}
+
+.suicide{
+    background-image: url("./images/projects/suicide_rates.jpg");
+}
+
+.search-engine{
+    background-image: url("./images/projects/search-engine.PNG");
+}
+
+.auction:hover, .auction:focus, .suicide:hover, .suicide:focus,
+.search-engine:hover, .search-engine:focus{
+    transition: all .8s;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+
+.slider-sketch{
+    background-image: url("./images/sketch/1.jpg");
+    animation: slider 10s infinite linear;
+}
+
+.slider-shots{
+    background-image: url("./images/shots/1.jpg");
+    animation: shots 10s infinite linear;
+}
+
+.hobbies{
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+.hobbies:hover , .project-title:hover{
+    transition: 0.5s;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+@keyframes slider {
+    0%{ background-image: url("./images/sketch/1.jpg"); }
+    25%{ background-image: url("./images/sketch/2.jpg"); }
+    50%{ background-image: url("./images/sketch/3.jpg"); }
+    75%{ background-image: url("./images/sketch/4.jpg"); }
+    100%{ background-image: url("./images/sketch/5.jpg"); }
+}
+
+@keyframes shots {
+    0%{ background-image: url("./images/shots/1.jpg"); }
+    25%{ background-image: url("./images/shots/2.jpg"); }
+    50%{ background-image: url("./images/shots/3.jpg"); }
+    75%{ background-image: url("./images/shots/4.jpg"); }
+    100%{ background-image: url("./images/shots/5.jpg"); }
+}
+
+
+.copyrights{
+    position: relative;
+    bottom: 2%;
+    color: rgb(87, 86, 86);
+    text-align: center;
+}
+
+
+nav {
+    bottom: 35%;
+	position: fixed;
+    left: 20px;
+	width: 150px;
+	height: 200px;
+	background-color: #18191A;
+	border-radius: 15px;
+	font-size: 0;
+	z-index:2;
+}
+nav .nava {
+	line-height: 50px;
+	height: 50%;
+    font-family: 'Share Tech Mono', monospace;
+	font-size: 13.5px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 50px;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 15px;
+}
+.nava:nth-child(1) {
+	width: 100%;
+    height: 50px;
+}
+.nava:nth-child(2) {
+	width: 100%;
+    height: 50px;
+}
+.nava:nth-child(3) {
+	width: 100%;
+    height: 50px;
+}
+.nava:nth-child(4) {
+	width: 100%;
+    height: 50px;
+}
+nav .start-home, .nava:nth-child(1):hover~.animation {
+	width: 150px;
+    height: 50px;
+	top: 0;
+	background-color: var(--on-nav);
+}
+nav .start-academic, .nava:nth-child(2):hover~.animation {
+	width: 150px;
+    height: 50px;
+    left: 0px;
+	top: 50px;
+	background-color: var(--on-nav);
+}
+nav .start-projects, .nava:nth-child(3):hover~.animation {
+	width: 150px;
+	height: 50px;
+    left: 0px;
+	top: 100px;
+	background-color: var(--on-nav);
+}
+nav .start-hobbies, .nava:nth-child(4):hover~.animation {
+	width: 150px;
+    height: 50px;
+    left: 0px;
+	top: 150px;
+	background-color: var(--on-nav);
+}
