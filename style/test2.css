@@ -33,13 +33,12 @@
   width: 300px;
   height: 80px;
   text-shadow: black 0.1em 0.1em 0.2em;
-  transition: 1.2s;
+  transition: 1.2;
 }
 
 .container-title:hover {
   background: #6f4685;
   color: white;
-  width: 500px;
 }
 
 #name, #subname {
@@ -256,6 +255,9 @@
     color: blanchedalmond;
     left: 50%;
     margin-top: -30px;
+    width: 100%;
+  }
+  .container-title:hover{
     width: 100%;
   }
 
